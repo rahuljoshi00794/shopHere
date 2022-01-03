@@ -10,6 +10,9 @@ import { UserHistoryComponent } from './components/user-history/user-history.com
   imports: [
     CommonModule,
     TransactionRoutingModule
+  ],
+  exports:[
+    UserHistoryComponent
   ]
 })
 export class TransactionModule { }
