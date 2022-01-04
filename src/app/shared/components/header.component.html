@@ -1,10 +1,15 @@
 <div class="row header">
-    <div class="col-sm-3 logo-search">
+    <div class="col-sm-8 logo-search">
         <img class="logo" src="../../../assets/images/shopHerelogo.png" alt="shopHere">
         <input matInput type="search" placeholder="search here">
         <mat-icon >check</mat-icon>
+        <mat-select>
+            <mat-option>
+             sdf
+            </mat-option>
+          </mat-select>
     </div>
-    <div class="col-sm-9 navigation">
+    <div class="col-sm-4 navigation">
         <div *ngFor="let nav of navList" class="nav-item">
             {{nav}}
         </div>

@@ -7,6 +7,9 @@
     cursor: pointer;
     color: $white;
  }
+ .nav-item:hover{
+     opacity: 0.85;
+ }
 }
 
 .row.header{
