@@ -1,0 +1,21 @@
+@import "src/assets/scss/variable.scss";
+.navigation{
+ text-align: right;
+ .nav-item{
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+    color: $white;
+ }
+}
+
+.row.header{
+    background-color: $primaryColor1;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+img.logo{
+    height: 50px;
+    cursor: pointer;
+}

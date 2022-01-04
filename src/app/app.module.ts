@@ -7,7 +7,9 @@ import { TransactionModule } from './transaction/transaction.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from './shared/components/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import { HeaderComponent } from './shared/components/header.component';
     SharedModule,
     DashboardModule,
     TransactionModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
