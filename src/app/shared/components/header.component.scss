@@ -1,0 +1,44 @@
+@import "src/assets/scss/variable.scss";
+.navigation{
+ text-align: right;
+ .nav-item{
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+    color: $white;
+ }
+ .nav-item:hover{
+     opacity: 0.85;
+ }
+}
+
+.row.header{
+    background-color: $primaryColor1;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+img.logo{
+    height:40px;
+    cursor: pointer;
+}
+
+div.search-box {
+    display: inline-block;
+    position: relative;
+    input{
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        width: 700px;
+        margin: 0 2rem;
+        padding: 6px 34px;
+    }
+    .search-icon{
+        color:$primaryColor1;
+        position: absolute;
+        left: 40px;
+        top: 4px;
+    }
+
+}

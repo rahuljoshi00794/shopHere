@@ -1,1 +1,14 @@
-<p>header works!</p>
+<div class="row header">
+    <div class="col-sm-8 logo-search">
+        <img class="logo" src="../../../assets/images/shopHerelogo.png" alt="shopHere">
+        <div class="search-box" >
+            <input matInput type="search">
+            <mat-icon class="search-icon">search</mat-icon>
+        </div>
+    </div>
+    <div class="col-sm-4 navigation">
+        <div *ngFor="let nav of navList" class="nav-item">
+            {{nav}}
+        </div>
+    </div>
+</div>
