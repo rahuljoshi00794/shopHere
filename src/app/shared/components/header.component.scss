@@ -19,6 +19,26 @@
 }
 
 img.logo{
-    height: 50px;
+    height:40px;
     cursor: pointer;
+}
+
+div.search-box {
+    display: inline-block;
+    position: relative;
+    input{
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        width: 700px;
+        margin: 0 2rem;
+        padding: 6px 34px;
+    }
+    .search-icon{
+        color:$primaryColor1;
+        position: absolute;
+        left: 40px;
+        top: 4px;
+    }
+
 }
