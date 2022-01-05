@@ -26,13 +26,15 @@ img.logo{
 div.search-box {
     display: inline-block;
     position: relative;
+    width: 70%;
     input{
         outline: none;
         border: none;
         border-radius: 10px;
-        width: 700px;
+        width: 100%;
         margin: 0 2rem;
         padding: 6px 34px;
+        width: 100%;
     }
     .search-icon{
         color:$primaryColor1;
