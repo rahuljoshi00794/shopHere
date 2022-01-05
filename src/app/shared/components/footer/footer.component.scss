@@ -1,0 +1,23 @@
+@import "src/assets/scss/variable.scss";
+
+div.footer{
+    background-color: $footerBackground;
+    color:$white;
+    padding: 1.5rem;
+    .footer-wrapper{
+        .subHeader{
+            font-weight: 600;
+            padding-top: 1rem;
+        }
+        .item-list{
+            display: block;
+            color: inherit;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .item-list:hover{
+            text-decoration: underline;
+            opacity: 0.85;
+        }
+    }
+}

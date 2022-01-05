@@ -1,1 +1,8 @@
-<p>footer works!</p>
+<div class="footer row">
+    <div class="footer-wrapper col-sm-3" *ngFor="let list of footerList">
+        <div class="subHeader">{{list?.label}}</div>
+        <a class="item-list" *ngFor="let item of list?.subList">
+            {{item}}
+        </a>
+    </div>
+</div>
