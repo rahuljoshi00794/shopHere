@@ -1,6 +1,78 @@
 {
     "products": [
         {
+            "product_name": "IPhone 13 Pro",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 99999,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": true,
+            "discountPercentage":"5",
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "IPhone 11",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 40000,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": false,
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "IPhone 11 Max",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 80000,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": true,
+            "discountPercentage":"8",
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "Samsung Galaxy",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 30000,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": true,
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "Realme X2",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 20000,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "discountPercentage":"8",
+            "manufacturerName": "Apple Inc"
+        },
+        {
             "product_name": "IPhone 11",
             "product_type": "electronic",
             "product_id": 23,
@@ -11,7 +83,7 @@
                     "isPrimary": true
                 }
             ],
-            "inStock": true,
+            "inStock": false,
             "manufacturerName": "Apple Inc"
         },
         {
@@ -26,6 +98,22 @@
                 }
             ],
             "inStock": true,
+            "discountPercentage":"8",
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "IPhone 8",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 39000,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": true,
+            "discountPercentage":"9",
             "manufacturerName": "Apple Inc"
         },
         {
@@ -40,6 +128,37 @@
                 }
             ],
             "inStock": true,
+            "discountPercentage":"8",
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "IPhone 11",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 78660,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": true,
+            "discountPercentage":"11",
+            "manufacturerName": "Apple Inc"
+        },
+        {
+            "product_name": "IPhone 11 Pro",
+            "product_type": "electronic",
+            "product_id": 23,
+            "product_price": 87566,
+            "images": [
+                {
+                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+                    "isPrimary": true
+                }
+            ],
+            "inStock": true,
+            "discountPercentage":"4.5",
             "manufacturerName": "Apple Inc"
         },
         {
@@ -54,6 +173,7 @@
                 }
             ],
             "inStock": true,
+            "discountPercentage":"8",
             "manufacturerName": "Apple Inc"
         },
         {
@@ -68,118 +188,7 @@
                 }
             ],
             "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
-            "manufacturerName": "Apple Inc"
-        },
-        {
-            "product_name": "IPhone 11",
-            "product_type": "electronic",
-            "product_id": 23,
-            "product_price": 90000,
-            "images": [
-                {
-                    "path": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
-                    "isPrimary": true
-                }
-            ],
-            "inStock": true,
+            "discountPercentage":"8",
             "manufacturerName": "Apple Inc"
         }
     ]

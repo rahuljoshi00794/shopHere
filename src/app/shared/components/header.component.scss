@@ -14,19 +14,28 @@
 
 .row.header{
     background-color: $primaryColor1;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 9;
 }
 
-img.logo{
-    height:40px;
-    cursor: pointer;
+.logo{
+    width: 10%;
+    display: inline-block;
+    img{
+        width: 100%;
+        max-width: 50px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
 }
 
 div.search-box {
     display: inline-block;
     position: relative;
-    width: 70%;
+    width: 80%;
     input{
         outline: none;
         border: none;
