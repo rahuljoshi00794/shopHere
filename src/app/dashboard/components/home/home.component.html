@@ -1,10 +1,12 @@
 <div class="dashboard-content row">
-    <div class="left-nav col-sm-3">
+    <div class="left-nav col-sm-2">
 
     </div>
-    <div class="middle-content col-sm-9">
-        <div *ngFor="let product of productList">
-                <app-product  [product]="product"></app-product>
+    <div class="middle-content col-sm-10">
+        <div class="row">
+            <div *ngFor="let product of productList" class="col-sm-3">
+                    <app-product  [product]="product"></app-product>
+            </div>
         </div>
     </div>
 </div>

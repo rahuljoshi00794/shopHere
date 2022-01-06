@@ -1,6 +1,7 @@
-<div class="product-wrapper row">
-    <h3 class="product-name">{{product?.product_name}} : {{product?.manufacturerName}}</h3>
+<div class="product-wrapper">
+    <h5 class="product-name">{{product?.product_name | uppercase}}</h5>
     <img src="{{product.images[0].path}}" class="image">
-    <div>Price: {{product.product_price}}</div>
-    <div>Stock: {{product.inStock? "Available" : "Coming Soon"}}</div>
+    <hr>
+    <div><b>Price:</b> {{product.product_price}}</div>
+    <div><b>Stock:</b> {{product.inStock? "Available" : "Coming Soon"}}</div>
 </div>
