@@ -13,5 +13,8 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  getPricePostDiscount(product){
+    return product?.product_price - (product.discountPercentage*product?.product_price*0.01);
+  }
 
 }

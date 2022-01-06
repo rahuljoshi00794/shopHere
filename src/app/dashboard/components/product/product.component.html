@@ -1,7 +1,12 @@
 <div class="product-wrapper">
-    <h5 class="product-name">{{product?.product_name | uppercase}}</h5>
     <img src="{{product.images[0].path}}" class="image">
     <hr>
-    <div><b>Price:</b> {{product.product_price}}</div>
-    <div><b>Stock:</b> {{product.inStock? "Available" : "Coming Soon"}}</div>
+    <div class="product-name"><b>{{product?.product_name | uppercase}}</b></div>
+    <div class="product-des">
+        <span [ngStyle]="{'text-decoration':product.discountPercentage?'line-through':'none'}">{{product.product_price | currency : "INR"}}</span>
+        <span><mat-icon [ngStyle]="{'color':product.inStock?'green':'yellow'}">fiber_manual_record</mat-icon>{{product.inStock? "Available" : "Coming Soon"}}</span>
+    </div>
+    <div class="discount-section" *ngIf="product.discountPercentage">
+        {{product?.discountPercentage}}% Off - {{getPricePostDiscount(product) | currency : "INR"}}
+    </div>
 </div>
