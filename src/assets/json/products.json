@@ -2,6 +2,11 @@
     "products": [
         {
             "product_name": "IPhone 13 Pro",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 99999,
@@ -17,6 +22,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 40000,
@@ -31,6 +41,11 @@
         },
         {
             "product_name": "IPhone 11 Max",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 80000,
@@ -46,6 +61,11 @@
         },
         {
             "product_name": "Samsung Galaxy",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 30000,
@@ -60,6 +80,11 @@
         },
         {
             "product_name": "Realme X2",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 20000,
@@ -74,6 +99,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 90000,
@@ -88,6 +118,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 90000,
@@ -103,6 +138,11 @@
         },
         {
             "product_name": "IPhone 8",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 39000,
@@ -118,6 +158,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 90000,
@@ -133,6 +178,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 78660,
@@ -148,6 +198,11 @@
         },
         {
             "product_name": "IPhone 11 Pro",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 87566,
@@ -163,6 +218,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 90000,
@@ -178,6 +238,11 @@
         },
         {
             "product_name": "IPhone 11",
+            "main_description": "16GB 128Gb with 8 core processor",
+            "product_info": [
+                "Higly dirable with 16gb ram",
+                "SSD drive with extendable feature to 150GB"
+            ],
             "product_type": "electronic",
             "product_id": 23,
             "product_price": 90000,

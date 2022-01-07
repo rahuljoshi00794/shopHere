@@ -1,7 +1,18 @@
-<div class="product-wrapper">
-    <img src="{{product.images[0].path}}" class="image">
+<div class="product-wrapper row">
+    <div class="row">
+        <div class="col-3">
+            <img src="{{product.images[0].path}}" class="image">
+        </div>
+        <div class="col-9">
+            <div class="product-name"><b>{{product?.product_name | titlecase}} </b>
+            <b *ngIf="product?.main_description" class="d-none d-sm-block">({{product?.main_description}})</b>
+            </div>
+            <ul>
+                <li *ngFor="let des of product?.product_info">{{des}}</li>
+            </ul>
+        </div>
+    </div>
     <hr>
-    <div class="product-name"><b>{{product?.product_name | titlecase}}</b></div>
     <div class="product-des">
         <span [ngStyle]="{'text-decoration':product.discountPercentage?'line-through':'none'}">{{product.product_price | currency : "INR"}}</span>
         <span><mat-icon [ngStyle]="{'color':product.inStock?'green':'yellow'}">fiber_manual_record</mat-icon>{{product.inStock? "Available" : "Coming Soon"}}</span>

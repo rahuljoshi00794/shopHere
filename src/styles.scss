@@ -1,9 +1,14 @@
-body{
+@import "src/assets/scss/variable.scss";
+html{
     box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: "Helvetica", Roboto, "Helvetica Neue", sans-serif !important;
     overflow-x: hidden;
     ::selection{
         background: none;
     }
-    font-family: "Helvetica", Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: $fontSizeAppbody !important;
 }
 // body { margin: 0;  }
