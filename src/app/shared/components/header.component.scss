@@ -25,6 +25,7 @@
 .logo{
     width: 10%;
     display: inline-block;
+    margin: 0 0.5rem;
     img{
         width: 100%;
         max-width: 50px;
@@ -42,14 +43,13 @@ div.search-box {
         border: none;
         border-radius: 10px;
         width: 100%;
-        margin: 0 2rem;
-        padding: 6px 34px;
+        padding: 6px 35px;
         width: 100%;
     }
     .search-icon{
         color:$primaryColor1;
         position: absolute;
-        left: 40px;
+        right: 10px;
         top: 4px;
     }
 
