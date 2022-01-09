@@ -1,9 +1,8 @@
 @import "src/assets/scss/variable.scss";
 
 div.footer{
-    background-color: $footerBackground;
-    color:$white;
-    padding: 1.5rem;
+    background-color: #f8f8f8;
+    padding: 2rem;
     .footer-wrapper{
         .subHeader{
             font-weight: 600;
@@ -14,10 +13,10 @@ div.footer{
             color: inherit;
             cursor: pointer;
             text-decoration: none;
+            padding: 0.25rem 0;
         }
         .item-list:hover{
-            text-decoration: underline;
-            opacity: 0.85;
+            color: $primaryColor1;
         }
     }
 }

@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material.module';
 import { LoaderComponent } from './components/loader/loader.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 
 
@@ -11,7 +12,8 @@ import { LoaderComponent } from './components/loader/loader.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    LoaderComponent
+    LoaderComponent,
+    BannerComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { LoaderComponent } from './components/loader/loader.component';
   exports:[
     HeaderComponent,
     FooterComponent,
-    MaterialModule
+    MaterialModule,
+    BannerComponent
   ],
   schemas:[]
 })
