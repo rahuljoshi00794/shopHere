@@ -1,1 +1,6 @@
-<p>loader works!</p>
+<div class="loader-wrapper" *ngIf="isLoading">
+    <div class="loader">
+        <mat-spinner mode="indeterminate" value="100" diameter="60" strokeWidth="7">
+        </mat-spinner>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 @import "src/assets/scss/variable.scss";
 
 div.footer{
-    background-color: #f8f8f8;
+    background-color: $footerBackground;
     padding: 2rem;
     .footer-wrapper{
         .subHeader{

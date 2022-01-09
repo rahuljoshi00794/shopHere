@@ -1,14 +1,14 @@
 @import "src/assets/scss/variable.scss";
 
 .product-wrapper{
-    box-shadow: 1px 1px 2px ;
+    box-shadow: 0 0 1px $primaryColor1;
     margin: 1rem 0;
     padding: 2rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     height: 90%;
     &:hover{
-        box-shadow: 1px 1px 6px $primaryColor1 ; 
+        box-shadow: 1px 1px 10px $primaryColor1 ; 
     }
     img.image{
         @media only screen and (max-width:576px){
