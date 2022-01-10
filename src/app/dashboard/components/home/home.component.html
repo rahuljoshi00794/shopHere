@@ -1,12 +1,14 @@
-<div class="dashboard-content row">
-    <app-banner></app-banner>
-    <div class="left-nav col-sm-2">
+<app-banner></app-banner>
+<div clas="container-fluid">
+    <div class="dashboard-content row">
+        <div class="left-nav col-sm-2">
 
-    </div>
-    <div class="middle-content col-sm-10">
-        <div class="row">
-            <div *ngFor="let product of productList" class="col-6 col-sm-3">
-                    <app-product  [product]="product"></app-product>
+        </div>
+        <div class="middle-content col-sm-10">
+            <div class="row">
+                <div *ngFor="let product of productList" class="col-6 col-sm-3">
+                    <app-product [product]="product"></app-product>
+                </div>
             </div>
         </div>
     </div>
