@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.scss']
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent implements OnInit , OnDestroy{
 
   sliderImages = [
     "assets/images/blackFridayImage.png",
@@ -14,10 +14,14 @@ export class BannerComponent implements OnInit {
     "assets/images/superSale.png",
   ]
   currentImageIndex = 0;
+  imageDuration =4000; //in mili sec
 
   constructor() { }
 
   ngOnInit(): void {
+    setInterval(()=>{
+      this.onClickRight();
+    },this.imageDuration)
   }
   onClickLeft() {
     if (this.currentImageIndex == 0) {
@@ -32,6 +36,10 @@ export class BannerComponent implements OnInit {
       return;
     }
     this.currentImageIndex++;
+  }
+
+  ngOnDestroy(): void {
+      
   }
 
 }
