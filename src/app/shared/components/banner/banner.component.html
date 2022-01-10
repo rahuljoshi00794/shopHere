@@ -1,12 +1,10 @@
-<div class="banner-wrapper row">
-    <div class="col-1 banner-arrow">
-        <mat-icon>keyboard_arrow_left</mat-icon>
-    </div>
-    <div class="col-10 images_wrapper">
-        <img src="assets/images/blackFridayImage.png">
-    </div>
-    <div class="col-1 banner-arrow">
-        <mat-icon>keyboard_arrow_right</mat-icon>
-    </div>
+<div class="banner-wrapper">
+    <img src="{{sliderImages[currentImageIndex]}}">
+    <mat-icon class="banner-arrow left" (click)="onClickLeft()">keyboard_arrow_left</mat-icon>
+    <mat-icon class="banner-arrow right" (click)="onClickRight()">keyboard_arrow_right</mat-icon>
+    <span class="images-dot">
+        <mat-icon *ngFor="let current of sliderImages; let i = index"
+         [ngClass]="{'primaryColor': i==currentImageIndex}"
+         (click)="currentImageIndex=i">fiber_manual_record</mat-icon>
+    </span>
 </div>
-<!-- <mat-carousel></mat-carousel> -->
