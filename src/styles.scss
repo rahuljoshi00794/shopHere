@@ -1,11 +1,12 @@
 @import "src/assets/scss/variable.scss";
+@import "src/assets/scss/fonts.scss";
 body{
     box-sizing: border-box;
     overflow-x: hidden;
     ::selection{
         background: none;
     }
-    font-family: "Helvetica", Roboto, "Helvetica Neue", sans-serif !important;
+    font-family:"Helvetica", Roboto, "Helvetica Neue", sans-serif ,"moon dance"!important;
     font-size: $fontSizeApp!important;
 }
 html{

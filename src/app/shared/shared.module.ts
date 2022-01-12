@@ -23,7 +23,8 @@ import { BannerComponent } from './components/banner/banner.component';
     HeaderComponent,
     FooterComponent,
     MaterialModule,
-    BannerComponent
+    BannerComponent,
+    LoaderComponent,
   ],
   schemas:[]
 })
