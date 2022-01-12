@@ -5,11 +5,14 @@
 
         </div>
         <div class="middle-content col-sm-10">
-            <div class="row">
+            <div class="row" *ngIf="productList?.length; else noRecordFound">
                 <div *ngFor="let product of productList" class="col-6 col-sm-3">
                     <app-product [product]="product"></app-product>
                 </div>
             </div>
+            <ng-template #noRecordFound>
+                <p class="no-record-found">No items found in the catalog. Please search with another keyword or contact with our customer care executive</p>
+            </ng-template>
         </div>
     </div>
 </div>

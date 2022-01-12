@@ -1,3 +1,13 @@
+@import "src/assets/scss/variable.scss";
 .dashboard-content{
     margin: 0.1rem;
+}
+
+.no-record-found{
+    color: $primaryColor1;
+    font-size: $fontSizeMainHeading;
+    opacity: .8;
+    margin: 0;
+    padding: 3rem 0 0 0;
+    font-weight: 600;
 }
