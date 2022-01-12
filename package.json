@@ -2,7 +2,7 @@
   "name": "shophere",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "ng g s shared/data-sharing",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",

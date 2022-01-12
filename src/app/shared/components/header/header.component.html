@@ -5,7 +5,7 @@
             <img  src="../../../assets/images/shopHerelogo.png" alt="shopHere">
         </div>
         <div class="search-box" >
-            <input matInput type="search">
+            <input matInput type="search" [(ngModel)]="searchValue" (keydown)="onClickSearch($event)">
             <mat-icon class="search-icon">search</mat-icon>
         </div>
     </div>
