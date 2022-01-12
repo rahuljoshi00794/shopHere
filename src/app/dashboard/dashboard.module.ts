@@ -5,6 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { ProductComponent } from './components/product/product.component';
 import { SharedModule } from '../shared/shared.module';
+import { DashboardService } from './dashboard.service';
 
 
 @NgModule({
@@ -14,6 +15,9 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     DashboardRoutingModule
   ],
+  providers:[
+    DashboardService
+  ]
   // schemas:[NO_ERRORS_SCHEMA]
 })
 export class DashboardModule { }

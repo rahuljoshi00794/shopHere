@@ -1,15 +1,12 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { from } from 'rxjs';
+import { HttpWrapperService } from '../services/http-wrapper.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DashboardService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private httpWrapper:HttpWrapperService) { }
 
   getProducts(){
-    return this.http.get('/assets/json/products.json');
+    return this.httpWrapper.get('/assets/json/products.json');
   }
 }

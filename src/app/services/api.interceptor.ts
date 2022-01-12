@@ -19,9 +19,7 @@ export class ApiInterceptor implements HttpInterceptor {
     this.loaderService.startLoadingFor(request.url);
     return next.handle(request).pipe(
       map((event:HttpEvent<any>)=>{
-        if(event instanceof HttpResponse ){
           this.loaderService.stopLoadingFor(request.url);
-        }
         return event
       })
     );
