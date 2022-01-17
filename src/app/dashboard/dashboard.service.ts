@@ -9,4 +9,8 @@ export class DashboardService {
   getProducts(){
     return this.httpWrapper.get('/assets/json/products.json');
   }
+
+  getProductDetails(id){
+    return this.httpWrapper.get('/assets/json/product-detail.json')
+  }
 }

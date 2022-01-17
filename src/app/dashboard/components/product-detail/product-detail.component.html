@@ -1,0 +1,26 @@
+<div class="product-detail">
+    <div class="dialog-header">
+       <span (click)="onClickClose()"> &times;</span>
+    </div>
+    <div class="image-list">
+        <img *ngFor="let image of dialogData?.product_image" 
+        [ngClass]="{'activeBorder':image==currentDisplayedImage}"
+        (click)="currentDisplayedImage=image" src="{{image}}">
+    </div>
+    <div class="image-wrapper">
+        <img src="{{currentDisplayedImage}}" >
+    </div>
+    <div class="product-description">
+        <h3 class="product-name">{{dialogData?.product_name | uppercase}}</h3>
+        <div  class="varient-block">
+            <span class="square-box" *ngFor="let varient of dialogData?.product_varients" (click)="selectedVarient=varient">{{varient.ram}},{{varient.rom}}</span>
+        </div>
+        <div class="colors-block">
+            <span class="square-box" *ngFor="let color of selectedVarient?.colors" [ngStyle]="{'background-color':color?.hexcode}" >{{color.name}}</span>
+        </div>
+        <div class="price">
+            {{selectedVarient.price | currency: 'INR'}}
+        </div>
+      
+    </div>
+</div>

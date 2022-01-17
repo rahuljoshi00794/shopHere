@@ -4,13 +4,15 @@ import { MatIconModule } from "@angular/material/icon"
 import { MatSelectModule } from "@angular/material/select";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatOptionModule } from "@angular/material/core";
+import { MatDialogModule } from "@angular/material/dialog";
 
 const declarations = [
     MatInputModule,
     MatIconModule,
     MatSelectModule,
     MatOptionModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule
 ]
 
 @NgModule({
