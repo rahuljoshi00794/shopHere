@@ -28,7 +28,7 @@ export class ProductComponent implements OnInit {
   onClickProductCard() {
     this.dashboardSvc.getProductDetails(this.product?.product_id).subscribe((product_data) => {
       this.dialogRef = this.dialog.open(ProductDetailComponent, 
-        { data: product_data});
+        { data: product_data,height:'90vh',width:'90vw'});
     }, error => {
 
     })

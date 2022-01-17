@@ -11,15 +11,17 @@
         <img src="{{currentDisplayedImage}}" >
     </div>
     <div class="product-description">
-        <h3 class="product-name">{{dialogData?.product_name | uppercase}}</h3>
+        <h3 class="product-name"><b>{{dialogData?.product_name | uppercase}}</b></h3>
         <div  class="varient-block">
-            <span class="square-box" *ngFor="let varient of dialogData?.product_varients" (click)="selectedVarient=varient">{{varient.ram}},{{varient.rom}}</span>
+            <span class="square-box" *ngFor="let varient of dialogData?.product_varients" 
+            (click)="selectedVarient=varient" [ngClass]="{'activeBorder':selectedVarient==varient}" >{{varient.ram}},{{varient.rom}}</span>
         </div>
         <div class="colors-block">
-            <span class="square-box" *ngFor="let color of selectedVarient?.colors" [ngStyle]="{'background-color':color?.hexcode}" >{{color.name}}</span>
+            <span class="square-box" *ngFor="let color of selectedVarient?.colors" (click)="selectedColor=color"
+             [ngClass]="{'activeBorder':selectedColor.hexcode==color.hexcode}">{{color.name}} </span>
         </div>
         <div class="price">
-            {{selectedVarient.price | currency: 'INR'}}
+            Total: {{selectedVarient.price | currency: 'INR'}} ({{selectedVarient?.ram}},{{selectedVarient?.rom}}-{{selectedColor.name}})
         </div>
       
     </div>
