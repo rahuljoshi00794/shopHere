@@ -1,0 +1,11 @@
+@import "src/assets/scss/variable.scss";
+.mat-dialog-container{
+    background-color: white;
+    color:black;
+    .dialog-header{
+        color: $primaryColor1;
+        text-align: right;
+        border-bottom: 1px solid $primaryColor1;
+        font-size:$fontSizeMainHeading;
+    }
+}

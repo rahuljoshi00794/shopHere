@@ -1,0 +1,73 @@
+{
+    "product_id": "23",
+    "product_name": "iphone 11",
+    "product_type": "electronic",
+    "manufacturerName": "Apple Inc",
+    "discountPercentage": "5",
+    "product_description": "The iPhone 11 was introduced in September 2019, and Apple has continued selling it as a lower-priced option alongside subsequent iPhone generations, dropping to $499 with the launch of the iPhone 13 lineup. The iPhone 11 features a 6.1-inch display, a dual-lens camera, and an A13 Bionic chip.",
+    "product_features": "<li>Dual-lens rear camera</li><li>Ultra Wide and Wide lenses</li><li>6.1\" Liquid Retina display</li><li>Night Mode</li><li>Dolby Atmos</li><li>More durable glass</li><li>New colors</li>",
+    "product_image":[
+        "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000",
+        "https://d2xamzlzrdbdbn.cloudfront.net/products/f94bc463-12d4-4489-aef4-a345105f87dd_182x182.jpg",
+        "https://d2xamzlzrdbdbn.cloudfront.net/products/9dfe6f22-c33e-4067-893f-787681824daf_182x182.jpg",
+        "https://d2xamzlzrdbdbn.cloudfront.net/products/cda89365-f3b5-41c9-ac75-79d70d604d76_182x182.jpg"
+    ],
+    "product_varients": [
+        {
+            "ram": "6GB",
+            "rom": "32GB",
+            "price": 94998,
+            "colors": [
+                {
+                    "name": "Black",
+                    "hexcode": "#000000",
+                    "inStock": false
+                },
+                {
+                    "name": "White",
+                    "hexcode": "#FFFFFF",
+                    "inStock": true
+                }
+            ]
+        },
+        {
+            "ram": "6GB",
+            "rom": "64GB",
+            "price": 67998,
+            "colors": [
+                {
+                    "name": "Black",
+                    "hexcode": "#000000",
+                    "inStock": true
+                },
+                {
+                    "name": "White",
+                    "hexcode": "#FFFFFF",
+                    "inStock": false
+                }
+            ]
+        },
+        {
+            "ram": "6GB",
+            "rom": "128GB",
+            "price": 53998,
+            "colors": [
+                {
+                    "name": "Black",
+                    "hexcode": "#000000",
+                    "inStock": false
+                },
+                {
+                    "name": "White",
+                    "hexcode": "#FFFFFF",
+                    "inStock": true
+                },
+                {
+                    "name": "Silver",
+                    "hexcode": "#C0C0C0",
+                    "inStock": true
+                }
+            ]
+        }
+    ]
+}
