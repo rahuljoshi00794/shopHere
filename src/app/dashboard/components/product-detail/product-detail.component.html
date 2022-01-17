@@ -12,6 +12,9 @@
     </div>
     <div class="product-description">
         <h3 class="product-name"><b>{{dialogData?.product_name | uppercase}}</b></h3>
+        <div class="about-product">
+            <p *ngFor="let feature of productInfo">{{feature}}</p>
+        </div>
         <div  class="varient-block">
             <span class="square-box" *ngFor="let varient of dialogData?.product_varients" 
             (click)="selectedVarient=varient" [ngClass]="{'activeBorder':selectedVarient==varient}" >{{varient.ram}},{{varient.rom}}</span>
