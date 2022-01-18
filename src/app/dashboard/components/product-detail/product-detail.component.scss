@@ -2,16 +2,20 @@
 @import "src/assets/scss/variable.scss";
 
 .product-detail{
+    padding-top:2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    .dialog-header{
-        flex-basis: 100%;
-        span{
-            cursor: pointer;
-        }
+    .back-to-products{
+      flex-basis: 100%;
+      cursor: pointer;
+      color: $primaryColor1;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
     }
     .image-wrapper{
+        flex-basis:40%;
         width: 180px;
         height: 200px;
         @media screen and (min-width:578px) {
