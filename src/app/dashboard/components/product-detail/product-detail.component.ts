@@ -1,4 +1,5 @@
-import { Component, HostListener, Inject, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DashboardService } from '../../dashboard.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class ProductDetailComponent implements OnInit {
   selectedColor:any;
   productInfo:any;
   product_data:any;
-  constructor(private dashboardSvc:DashboardService ) { }
+  constructor(private router:Router, private dashboardSvc:DashboardService ) { }
 
   ngOnInit(): void {
     this.fetchProductDetails();
@@ -38,6 +39,10 @@ export class ProductDetailComponent implements OnInit {
     this.productInfo = this.productInfo?.map((item) => {
       return item?.replace('</li>', '')
     });
+  }
+
+  onClickAllProducts(){
+    this.router.navigate(['/']);
   }
  
 
