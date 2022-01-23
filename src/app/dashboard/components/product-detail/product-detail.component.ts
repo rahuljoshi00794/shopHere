@@ -1,6 +1,6 @@
-import { Component, HostListener, Inject, OnInit, ViewChild } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DataSharingService } from 'src/app/shared/data-sharing.service';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DashboardService } from '../../dashboard.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -12,29 +12,37 @@ export class ProductDetailComponent implements OnInit {
   selectedVarient:any;
   selectedColor:any;
   productInfo:any;
-  constructor(private dialogRef:MatDialogRef<ProductDetailComponent>,
-    @Inject(MAT_DIALOG_DATA) public dialogData: any ) { }
+  product_data:any;
+  constructor(private router:Router, private dashboardSvc:DashboardService ) { }
 
   ngOnInit(): void {
-    this.setInitialData();
+    this.fetchProductDetails();
   }
 
+  fetchProductDetails(){
+    this.dashboardSvc.getProductDetails(121).subscribe((data)=>{
+      this.product_data  = data;
+      this.setInitialData();
+    }, (error)=>{
+
+    });
+  }
   setInitialData(){
-    this.currentDisplayedImage = this.dialogData?.product_image?.[0];
-    this.selectedVarient = this.dialogData?.product_varients?.[0];
-    this.selectedColor = this.dialogData?.product_varients?.[0]?.colors?.[0];
+    this.currentDisplayedImage = this.product_data?.product_image?.[0];
+    this.selectedVarient = this.product_data?.product_varients?.[0];
+    this.selectedColor = this.product_data?.product_varients?.[0]?.colors?.[0];
     this.fetchAboutProduct();
   }
   fetchAboutProduct() {
-    const string = this.dialogData?.product_features;
+    const string = this.product_data?.product_features;
     this.productInfo = string?.split('<li>')?.slice(1, this.productInfo?.length);
     this.productInfo = this.productInfo?.map((item) => {
       return item?.replace('</li>', '')
     });
   }
 
-  onClickClose(){
-    this.dialogRef.close();
+  onClickAllProducts(){
+    this.router.navigate(['/']);
   }
  
 

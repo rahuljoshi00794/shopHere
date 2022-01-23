@@ -18,11 +18,11 @@ import { ApiInterceptor } from './services/api.interceptor';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
     SharedModule,
     DashboardModule,
     TransactionModule,
     RouterModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
   ],
   providers: [

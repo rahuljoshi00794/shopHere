@@ -1,6 +1,7 @@
 import { ScrollStrategyOptions } from '@angular/cdk/overlay';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { HttpWrapperService } from 'src/app/services/http-wrapper.service';
 import { DashboardService } from '../../dashboard.service';
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
@@ -16,8 +17,7 @@ export class ProductComponent implements OnInit {
   private dialogRef: MatDialogRef<ProductDetailComponent>;
 
   constructor(private dialog: MatDialog,
-    private dashboardSvc: DashboardService,
-    private httpWrapper: HttpWrapperService) { }
+    private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,13 +26,7 @@ export class ProductComponent implements OnInit {
   }
 
   onClickProductCard() {
-    this.dashboardSvc.getProductDetails(this.product?.product_id).subscribe((product_data) => {
-      this.dialogRef = this.dialog.open(ProductDetailComponent, 
-        { data: product_data,height:'90vh',width:'90vw'});
-    }, error => {
-
-    })
-
+    this.router.navigate(['product-details',this.product?.product_id]);
   }
 
 }
