@@ -8,13 +8,15 @@ import { BannerComponent } from './components/banner/banner.component';
 import { FormsModule } from '@angular/forms';
 
 
-
+const declarations= [
+  HeaderComponent,
+  FooterComponent,
+  LoaderComponent,
+  BannerComponent
+]
 @NgModule({
   declarations: [
-    HeaderComponent,
-    FooterComponent,
-    LoaderComponent,
-    BannerComponent
+   ...declarations
   ],
   imports: [
     CommonModule,
@@ -22,11 +24,12 @@ import { FormsModule } from '@angular/forms';
     MaterialModule
   ],
   exports:[
-    HeaderComponent,
-    FooterComponent,
+    CommonModule,
+    FormsModule,
     MaterialModule,
-    BannerComponent,
-    LoaderComponent,
+
+    //declarations
+    ...declarations
   ],
   schemas:[]
 })

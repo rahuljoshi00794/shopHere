@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {ajax} from "rxjs/ajax"
 import { HttpWrapperService } from '../services/http-wrapper.service';
 
 @Injectable()
@@ -11,6 +12,6 @@ export class DashboardService {
   }
 
   getProductDetails(id){
-    return this.httpWrapper.get('/assets/json/product-detail.json')
+    return ajax.getJSON('/assets/json/product-detail.json')
   }
 }

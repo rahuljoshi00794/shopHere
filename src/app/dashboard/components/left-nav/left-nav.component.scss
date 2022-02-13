@@ -1,0 +1,18 @@
+@import 'src/assets/scss/variable.scss';
+
+.left-nav{
+    padding: 1rem;
+    position: sticky;
+    top: 4.5rem;
+    overflow-y: scroll;
+    max-height: 100vh;
+    font-size: $fontSizeApp;
+    .label{
+        font-weight: 600;
+        font-size: $fontSizeSubHeading;
+    }
+    .options{
+
+    }
+
+}

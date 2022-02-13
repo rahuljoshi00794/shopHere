@@ -1,8 +1,8 @@
 <app-banner></app-banner>
 <div clas="container-fluid">
     <div class="dashboard-content row">
-        <div class="left-nav col-sm-2">
-
+        <div class="left-nav-wrapper col-sm-2">
+           <app-left-nav></app-left-nav>
         </div>
         <div class="middle-content col-sm-10">
             <div class="row" *ngIf="productList?.length; else noRecordFound">

@@ -7,10 +7,12 @@ import { ProductComponent } from './components/product/product.component';
 import { SharedModule } from '../shared/shared.module';
 import { DashboardService } from './dashboard.service';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { LeftNavComponent } from './components/left-nav/left-nav.component';
+import { FormatOptionsPipe } from './pipes/format-options.pipe';
 
 
 @NgModule({
-  declarations: [HomeComponent, ProductComponent, ProductDetailComponent],
+  declarations: [HomeComponent, ProductComponent, ProductDetailComponent, LeftNavComponent,FormatOptionsPipe],
   imports: [
     CommonModule,
     SharedModule,
