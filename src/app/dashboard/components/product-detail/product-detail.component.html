@@ -17,14 +17,14 @@
         </div>
         <div  class="varient-block">
             <span class="square-box" *ngFor="let varient of product_data?.product_varients" 
-            (click)="selectedVarient=varient" [ngClass]="{'activeBorder':selectedVarient==varient}" >{{varient.ram}},{{varient.rom}}</span>
+            (click)="selectedVarient=varient" [ngClass]="{'activeBorder':selectedVarient==varient}" >{{varient?.ram}},{{varient?.rom}}</span>
         </div>
         <div class="colors-block">
             <span class="square-box" *ngFor="let color of selectedVarient?.colors" (click)="selectedColor=color"
              [ngClass]="{'activeBorder':selectedColor.hexcode==color.hexcode}">{{color.name}} </span>
         </div>
         <div class="price">
-            Total: {{selectedVarient?.price | currency: 'INR'}} ({{selectedVarient?.ram}},{{selectedVarient?.rom}}-{{selectedColor.name}})
+            Total: {{selectedVarient?.price | currency: 'INR'}} ({{selectedVarient?.ram}},{{selectedVarient?.rom}}-{{selectedColor?.name}})
         </div>
       
     </div>

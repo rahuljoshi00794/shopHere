@@ -1,0 +1,12 @@
+<div class="left-nav">
+    <div *ngFor="let item of leftNavItems">
+        <div class="label">
+            {{item?.label}}
+        </div>
+        <div class="options" *ngFor="let value of item?.values">
+            <input type="checkbox">
+            {{value | formatOptions : item?.key}}
+        </div>
+        <br>
+    </div>
+</div>
