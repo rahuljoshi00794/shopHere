@@ -11,8 +11,19 @@
         font-weight: 600;
         font-size: $fontSizeSubHeading;
     }
-    .options{
-
+    @media screen and (max-width:576px) {
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 1;
+        display: none;
+        background-color:  $footerBackground;
+        .close{
+            float: right;
+        }
     }
+}
 
+.showNav{
+    display: block;
 }

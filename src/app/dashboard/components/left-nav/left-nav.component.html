@@ -1,4 +1,6 @@
-<div class="left-nav">
+<span class="d-block d-sm-none" (click)="leftNavExpanded=true"><mat-icon>menu</mat-icon></span>
+<div class="left-nav" [ngClass]="{'showNav':leftNavExpanded}">
+    <span class="close d-block d-sm-none" (click)="leftNavExpanded=false"><mat-icon>close</mat-icon></span>
     <div *ngFor="let item of leftNavItems">
         <div class="label">
             {{item?.label}}
