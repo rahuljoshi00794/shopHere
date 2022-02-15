@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-nav.component.scss']
 })
 export class LeftNavComponent implements OnInit {
+  leftNavExpanded =false;
   leftNavItems = [
     {
       key: 'price',
@@ -33,5 +34,5 @@ export class LeftNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
